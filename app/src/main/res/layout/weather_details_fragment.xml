@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="425dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="San Francisco"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/weatherTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="380dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Partly Cloudy"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationTextView" />
+
+    <TextView
+        android:id="@+id/weatherTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="340dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Description"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherTextView" />
+
+    <ImageView
+        android:id="@+id/weatherIconImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="141dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherTextView"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tempTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="27dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="7.77 °C"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/windTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/weatherIconImageView"
+        app:layout_constraintTop_toBottomOf="@+id/weatherTextView"
+        tools:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/windTextView"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="35dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Wind: 19 km/h"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/weatherIconImageView"
+        tools:layout_editor_absoluteY="296dp" />
+
+    <TextView
+        android:id="@+id/humidityTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="141dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Humidity: 70%"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/weatherIconImageView"
+        app:layout_constraintTop_toBottomOf="@+id/windTextView" />
+</android.support.constraint.ConstraintLayout>
